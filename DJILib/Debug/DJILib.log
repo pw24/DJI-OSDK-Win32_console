@@ -1,0 +1,52 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  APIFront.cpp
+c:\vs_repos\dji-osdk-win32_console\djilib\apifront.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Main.cpp
+c:\vs_repos\dji-osdk-win32_console\djilib\main.cpp(139): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  dji_ack.cpp
+  dji_broadcast.cpp
+  dji_camera.cpp
+  dji_command.cpp
+  dji_control.cpp
+  dji_error.cpp
+  dji_gimbal.cpp
+  dji_hardware_sync.cpp
+  dji_hotpoint.cpp
+  dji_mfio.cpp
+  dji_mission_manager.cpp
+  dji_mobile_communication.cpp
+  dji_mobile_device.cpp
+  dji_subscription.cpp
+c:\vs_repos\dji-osdk-win32_console\djilib\osdk-core\api\src\dji_subscription.cpp(86): warning C4838: conversion from 'DJI::OSDK::Telemetry::TOPIC_UID' to 'const uint32_t' requires a narrowing conversion
+  dji_vehicle.cpp
+c:\vs_repos\dji-osdk-win32_console\djilib\osdk-core\api\src\dji_vehicle.cpp(1618): warning C4018: '<': signed/unsigned mismatch
+  dji_version.cpp
+  dji_virtual_rc.cpp
+  dji_waypoint.cpp
+  Generating Code...
+  Compiling...
+  dji_hard_driver.cpp
+  dji_log.cpp
+  dji_memory.cpp
+  dji_platform_manager.cpp
+  dji_thread_manager.cpp
+  dji_memory_default.cpp
+  posix_thread.cpp
+  posix_thread_manager.cpp
+  dji_aes.cpp
+  dji_open_protocol.cpp
+c:\vs_repos\dji-osdk-win32_console\djilib\osdk-core\protocol\src\dji_open_protocol.cpp(507): warning C4018: '<': signed/unsigned mismatch
+c:\vs_repos\dji-osdk-win32_console\djilib\osdk-core\protocol\src\dji_open_protocol.cpp(799): warning C4018: '>': signed/unsigned mismatch
+  dji_protocol_base.cpp
+c:\vs_repos\dji-osdk-win32_console\djilib\osdk-core\protocol\src\dji_protocol_base.cpp(155): warning C4018: '<': signed/unsigned mismatch
+c:\vs_repos\dji-osdk-win32_console\djilib\osdk-core\protocol\src\dji_protocol_base.cpp(186): warning C4018: '<': signed/unsigned mismatch
+  dji_circular_buffer.cpp
+  dji_singleton.cpp
+  SysTime.cpp
+c:\vs_repos\dji-osdk-win32_console\djilib\systime.cpp(72): warning C4244: '=': conversion from 'double' to 'LONGLONG', possible loss of data
+c:\vs_repos\dji-osdk-win32_console\djilib\systime.cpp(73): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  Win_serial_device.cpp
+  Generating Code...
+c:\vs_repos\dji-osdk-win32_console\djilib\osdk-core\hal\src\dji_platform_manager.cpp(238): warning C4715: 'DJI::OSDK::PlatformManager::addHardDriver': not all control paths return a value
+     Creating library C:\VS_repos\DJI-OSDK-Win32_console\Debug\DJILib.lib and object C:\VS_repos\DJI-OSDK-Win32_console\Debug\DJILib.exp
+  DJILib.vcxproj -> C:\VS_repos\DJI-OSDK-Win32_console\Debug\DJILib.exe

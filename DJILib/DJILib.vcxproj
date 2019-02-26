@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{665D9AC7-E932-4729-9A26-10D153668756}</ProjectGuid>
+    <RootNamespace>DJILib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)DJILib\Pthread;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DJILib\Pthread\lib\x86;$(SolutionDir)DJILib\Pthread\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)DJILib\Pthread;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DJILib\Pthread\lib\x86;$(SolutionDir)DJILib\Pthread\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)DJILib\Pthread;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DJILib\Pthread\lib\x86;$(SolutionDir)DJILib\Pthread\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)DJILib\Pthread;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DJILib\Pthread\lib\x86;$(SolutionDir)DJILib\Pthread\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Debug</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)DJILib;$(SolutionDir)DJILib\osdk-core\platform\default\inc;$(SolutionDir)DJILib\osdk-core\protocol\inc;$(SolutionDir)DJILib\osdk-core\platform\linux\inc;$(SolutionDir)DJILib\osdk-core\utility\inc;$(SolutionDir)DJILib\osdk-core\hal\inc;$(SolutionDir)DJILib\osdk-core\api\inc;$(SolutionDir)DJILib\Pthread;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)DJILib\Pthread\lib\x86\pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>$(SolutionDir)DJILib\Pthread\lib\x86;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)DJILib;$(SolutionDir)DJILib\osdk-core\platform\default\inc;$(SolutionDir)DJILib\osdk-core\protocol\inc;$(SolutionDir)DJILib\osdk-core\platform\linux\inc;$(SolutionDir)DJILib\osdk-core\utility\inc;$(SolutionDir)DJILib\osdk-core\hal\inc;$(SolutionDir)DJILib\osdk-core\api\inc;$(SolutionDir)DJILib\Pthread;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)DJILib\Pthread\lib\x86\pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>$(SolutionDir)DJILib\Pthread\lib\x86;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)DJILib;$(SolutionDir)DJILib\osdk-core\platform\default\inc;$(SolutionDir)DJILib\osdk-core\protocol\inc;$(SolutionDir)DJILib\osdk-core\platform\linux\inc;$(SolutionDir)DJILib\osdk-core\utility\inc;$(SolutionDir)DJILib\osdk-core\hal\inc;$(SolutionDir)DJILib\osdk-core\api\inc;$(SolutionDir)DJILib\Pthread;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)DJILib\Pthread\lib\x86\pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>$(SolutionDir)DJILib\Pthread\lib\x86;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)DJILib;$(SolutionDir)DJILib\osdk-core\platform\default\inc;$(SolutionDir)DJILib\osdk-core\protocol\inc;$(SolutionDir)DJILib\osdk-core\platform\linux\inc;$(SolutionDir)DJILib\osdk-core\utility\inc;$(SolutionDir)DJILib\osdk-core\hal\inc;$(SolutionDir)DJILib\osdk-core\api\inc;$(SolutionDir)DJILib\Pthread;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)DJILib\Pthread\lib\x86\pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>$(SolutionDir)DJILib\Pthread\lib\x86;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="APIFront.h" />
+    <ClInclude Include="osdk-core\api\inc\dji_ack.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_broadcast.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_camera.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_command.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_control.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_error.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_gimbal.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_hardware_sync.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_hotpoint.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_mfio.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_mission_base.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_mission_manager.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_mission_type.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_mobile_communication.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_mobile_device.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_status.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_subscription.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_telemetry.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_telemetry_doc.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_type.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_vehicle.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_vehicle_callback.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_version.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_virtual_rc.hpp" />
+    <ClInclude Include="osdk-core\api\inc\dji_waypoint.hpp" />
+    <ClInclude Include="osdk-core\hal\inc\dji_hard_driver.hpp" />
+    <ClInclude Include="osdk-core\hal\inc\dji_log.hpp" />
+    <ClInclude Include="osdk-core\hal\inc\dji_memory.hpp" />
+    <ClInclude Include="osdk-core\hal\inc\dji_platform_manager.hpp" />
+    <ClInclude Include="osdk-core\hal\inc\dji_thread_manager.hpp" />
+    <ClInclude Include="osdk-core\platform\default\inc\dji_memory_default.hpp" />
+    <ClInclude Include="osdk-core\platform\linux\inc\posix_thread.hpp" />
+    <ClInclude Include="osdk-core\platform\linux\inc\posix_thread_manager.hpp" />
+    <ClInclude Include="osdk-core\protocol\inc\dji_aes.hpp" />
+    <ClInclude Include="osdk-core\protocol\inc\dji_crc.hpp" />
+    <ClInclude Include="osdk-core\protocol\inc\dji_open_protocol.hpp" />
+    <ClInclude Include="osdk-core\protocol\inc\dji_protocol_base.hpp" />
+    <ClInclude Include="osdk-core\utility\inc\dji_circular_buffer.hpp" />
+    <ClInclude Include="osdk-core\utility\inc\dji_macros.hpp" />
+    <ClInclude Include="osdk-core\utility\inc\dji_singleton.hpp" />
+    <ClInclude Include="SysTime.h" />
+    <ClInclude Include="Win_serial_device.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="APIFront.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_ack.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_broadcast.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_camera.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_command.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_control.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_error.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_gimbal.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_hardware_sync.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_hotpoint.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_mfio.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_mission_manager.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_mobile_communication.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_mobile_device.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_subscription.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_vehicle.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_version.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_virtual_rc.cpp" />
+    <ClCompile Include="osdk-core\api\src\dji_waypoint.cpp" />
+    <ClCompile Include="osdk-core\hal\src\dji_hard_driver.cpp" />
+    <ClCompile Include="osdk-core\hal\src\dji_log.cpp" />
+    <ClCompile Include="osdk-core\hal\src\dji_memory.cpp" />
+    <ClCompile Include="osdk-core\hal\src\dji_platform_manager.cpp" />
+    <ClCompile Include="osdk-core\hal\src\dji_thread_manager.cpp" />
+    <ClCompile Include="osdk-core\platform\default\src\dji_memory_default.cpp" />
+    <ClCompile Include="osdk-core\platform\linux\src\posix_thread.cpp" />
+    <ClCompile Include="osdk-core\platform\linux\src\posix_thread_manager.cpp" />
+    <ClCompile Include="osdk-core\protocol\src\dji_aes.cpp" />
+    <ClCompile Include="osdk-core\protocol\src\dji_open_protocol.cpp" />
+    <ClCompile Include="osdk-core\protocol\src\dji_protocol_base.cpp" />
+    <ClCompile Include="osdk-core\utility\src\dji_circular_buffer.cpp" />
+    <ClCompile Include="osdk-core\utility\src\dji_singleton.cpp" />
+    <ClCompile Include="SysTime.cpp" />
+    <ClCompile Include="Win_serial_device.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
